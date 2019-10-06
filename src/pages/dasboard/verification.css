@@ -1,0 +1,59 @@
+.border-line{
+    width: 100%;
+    height: 80px;
+    border-bottom: #CFCFCF solid 1px;
+}
+
+.active-tab{
+    font-size: 16px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.03em;
+    height: 100%;
+    border-bottom: 3px solid #1E9D55;
+    color: #1E9D55;
+    margin-right: 30px;
+    cursor: pointer;
+    transition: 0.5s;
+    /*animation: ease-in;*/
+}
+.non-active-tab{
+    font-size: 16px;
+    transition: 0.5s;
+    line-height: 30px;
+    height: 100%;
+    margin-right: 30px;
+    cursor: pointer;
+    /*animation: forwards;*/
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.03em;
+    color: #777777;
+}
+
+.p-progress{
+    background: #1E9D55;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    color: white;
+    font-weight: bold;
+}
+
+.p-stroke{
+    width: 3px;
+    height: 106px;
+    background: #DFE2E6;
+}
+
+.p-stroke-holder{
+    width: 30px;
+}
+
+.p-verification-holder{
+    width: calc(100% - 30px)!important;
+    margin-left: 15px!important;
+}
