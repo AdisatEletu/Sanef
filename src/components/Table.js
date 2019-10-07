@@ -8,7 +8,7 @@ export default class Table extends React.Component {
     };
 
     render() {
-        const {columns, data, className, bodyStyle, headStyle, headClass} = this.props;
+        const {columns, data, className, bodyStyle, headStyle, headClass, onClick} = this.props;
         return (
             <>
                 <table>
@@ -25,7 +25,7 @@ export default class Table extends React.Component {
                     <tbody>
                     {data.map((source, index) => {
                         return (
-                            <tr key={index} className={className} style={bodyStyle}>
+                            <tr key={index} className={className} style={bodyStyle} onClick={()=>{onClick ? onClick(source) : console.log("No on click ")}}>
                                 {columns.map((column, index) => {
                                     return <td key={index}>
                                         {column.render && !column.dataIndex ? column.render(source).props.children : column.render ? column.render(source[column.dataIndex]).props.children : source[column.dataIndex]}
