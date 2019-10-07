@@ -249,7 +249,7 @@ code {
 
 .s-analytics-box1 {
     border-radius: 4px;
-    height: 100px;
+    min-height: 150px;
     color: #F97F51;
     /* color: #fff; */
     border: 1px solid #ccc;
@@ -263,6 +263,17 @@ code {
     border: 1px solid #ccc;
 }
 
+.blue-color{
+    color: #25CCF7;
+}
+
+.orange-color{
+    color: #F97F51;
+}
+
+.green-color{
+    color: #58B19F;
+}
 
 .s-analytics-box3 {
     border-radius: 4px;
@@ -292,7 +303,7 @@ code {
     border-radius: 4px;
     color: #82589F;
     border: 1px solid #ccc;
-    height: 100px;
+    min-height: 100px;
 
 }
 
@@ -431,4 +442,17 @@ thead>tr>th, tbody >tr>td {
 
 .text-align-center{
     text-align: center;
+}
+
+.border-top{
+    border-top: 1px #eaeaea solid;
+    padding: 5px
+}
+
+.padding-5{
+    padding: 5px
+}
+
+.black-color{
+    color: #000000;
 }

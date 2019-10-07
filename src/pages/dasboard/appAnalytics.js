@@ -3,48 +3,56 @@ import React from "react";
 
 const AppAnalytics = () => (
     <div className=" d-flex align-items-center justify-content-center">
-        <div className={"md-3"}>
-            <div className={"s-analytics-box1 fullwidth d-flex flex-column align-items-center justify-content-center "}>
-                <div className={"fw-500 fs-18"}>
-                    Accounts
-                </div>
-                <div className={"grey fs-28"}>
-                    2,004
-                </div>
-            </div>
-        </div>
-        <div className={"md-3"}>
-            <div className={"s-analytics-box1 fullwidth d-flex flex-column align-items-center justify-content-center "}>
-                <div className={"fw-500 fs-18"}>
-                    Wallets
-                </div>
-                <div className={"grey fs-28"}>
-                    2,004
-                </div>
-            </div>
-        </div>
+        <div className={"md-5"}>
+            <div className={"s-analytics-box1 fullwidth d-flex align-items-center justify-content-center "}>
+                <div className={"fw-500 fs-18 d-flex justify-content-center align-items-center md-3"}>
+                    <img src={require("../../assets/wallet.png")} width={"64px"} alt={"account"}/>
 
-        <div className={"md-3"}>
-            <div className={"s-analytics-box1 fullwidth d-flex flex-column align-items-center justify-content-center "}>
-                <div className={"fw-500 fs-18"}>
-                    Agents
                 </div>
-                <div className={"grey fs-28"}>
-                    2,004
-                </div>
-            </div>
-        </div>
-        <div className={"md-3"}>
-            <div className={"s-analytics-box1 fullwidth d-flex flex-column align-items-center justify-content-center "}>
-                <div className={"fw-500 fs-18"}>
-                    Total Value
-                </div>
-                <div className={"grey fs-28"}>
-                    2,004
-                </div>
-            </div>
-        </div>
+                <div className={" md-7  d-flex flex-column"}>
+                    <div className={"padding-5"}>
+                        <div className={"fw-500 black-color"}>2,004</div>
+                        <div className={"fw-500 green-color"}> Number of Accounts</div>
 
+                    </div>
+                    <div className={"border-top"}>
+                        <div className={"fw-500 black-color"}>
+                            2,004
+                        </div>
+                        <div className={"fw-500 green-color"}>
+                           Number of Wallets
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div className={"md-5"}>
+            <div className={"s-analytics-box1 fullwidth d-flex align-items-center justify-content-center "}>
+                <div className={"fw-500 fs-18 d-flex justify-content-center align-items-center md-3"}>
+                    <img src={require("../../assets/value.png")} width={"64px"} alt={"account"}/>
+
+                </div>
+                <div className={" md-7  d-flex flex-column"}>
+                    <div className={"padding-5"}>
+                        <div className={"fw-500 black-color"}>2,004</div>
+                        <div className={"fw-500 green-color"}> Number of Agents</div>
+
+                    </div>
+                    <div className={"border-top"}>
+                        <div className={"fw-500 black-color"}>
+                            2,004
+                        </div>
+                        <div className={"fw-500 green-color"}>
+                           Transactions Value
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
     </div>
 );
 
