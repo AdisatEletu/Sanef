@@ -10,11 +10,11 @@ export default class Input extends React.Component{
         name: PropTypes.string.isRequired
     }
     render() {
-        const {value, type, style, id,onChange, name, placeholder} = this.props;
+        const {value, type, style, id,onChange, name, placeholder, readOnly} = this.props;
         return (
             <>
                 <div className={"md-10"}>
-                    <input type={type} id={id} value={value} name={name} placeholder={placeholder} className={"basic-input"} style={style} onChange={()=>{onChange()}}/>
+                    <input type={type} id={id} value={value} name={name} placeholder={placeholder} readOnly={readOnly} className={"basic-input"} style={style} onChange={()=>{onChange()}}/>
                 </div>
             </>
         );
