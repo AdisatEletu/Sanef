@@ -39,7 +39,7 @@ export const Sidebar = props => {
                         <span className={"p-link-text"}>Applications</span>
                     </div>
                 </NavLink>
-                <NavLink to={"/user"} activeClassName="p-active-link">
+                <NavLink to={"/users"} activeClassName="p-active-link">
                     <div className={"p-links d-flex align-items-center"}>
                         <span className={"p-link-text"}>User Management</span>
                     </div>

@@ -5,22 +5,40 @@ import AgentApproval from "./agent/AgentApproval";
 
 
 
-const Agents = (props) => (
+class Agents extends React.Component {
+    constructor(props){
+        super(props);
+        this.state={
+            click: false
+        }
+    }
 
-    <div className="container">
-        <Tabs>
-            <div label={"Approved Agents"}>
-                <AgentTable/>
+    componentDidMount() {
+
+    }
+
+    onClick=()=>{
+        this.setState({
+            modalActive: true
+        })
+    }
+    render() {
+        return(
+            <div className="container">
+                <Tabs>
+                    <div label={"Approved Agents"}>
+                        <AgentTable onClick = {this.onClick}/>
+                    </div>
+
+                    <div label={"Agent Requests"}>
+                        <AgentApproval/>
+                    </div>
+                </Tabs>
+                <div>
+
+                </div>
             </div>
-
-            <div label={"Agent Requests"}>
-                <AgentApproval/>
-            </div>
-        </Tabs>
-        <div>
-
-        </div>
-    </div>
-);
-
+        )
+    }
+}
 export default Agents;

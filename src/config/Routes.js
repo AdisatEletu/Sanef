@@ -11,9 +11,10 @@ const Home = lazy(() => import("../pages/home/Home"));
 const Login = lazy(() => import("../pages/auth/Login"));
 const Dashboard = lazy(() => import("../pages/Dashboard"));
 const Customer = lazy(() => import("../pages/Customer"));
-const Wallet = lazy(() => import("../pages/wallet/Wallet"));
+const Application = lazy(() => import("../pages/Application"));
 const Partners = lazy(() => import("../pages/partners/Partners"));
 const Agents = lazy(() => import("../pages/Agents"));
+const User = lazy(() => import("../pages/UserManagement"));
 
 const Routes = () => (
     <Router>
@@ -29,10 +30,11 @@ const Routes = () => (
 
                     {/* public route: accessible to both !!authenticated users */}
                     <PublicRoute exact path="/dashboard" component={Dashboard}/>
-                    <PublicRoute exact path="/wallet" component={Wallet}/>
+                    <PublicRoute exact path="/applications" component={Application}/>
                     <PublicRoute exact path="/customers" component={Customer}/>
                     <PublicRoute exact path="/partners" component={Partners}/>
                     <PublicRoute exact path="/agents" component={Agents}/>
+                    <PublicRoute exact path="/users" component={User}/>
                 </DashboardLayout>
             </Switch>
         </Suspense>
