@@ -58,6 +58,18 @@ code {
     margin-bottom: 50px;
 }
 
+.margin-top-30 {
+    margin-top: 30px;
+}
+
+.margin-top-15 {
+    margin-top: 15px;
+}
+
+.margin-bottom-15 {
+    margin-bottom: 15px;
+}
+
 .margin-bottom-30 {
     margin-bottom: 30px;
 }
@@ -150,7 +162,7 @@ code {
 }
 
 .md-10 {
-    width: 100%;
+    width: 100%!important;
 }
 
 .md-7 {
@@ -172,6 +184,7 @@ code {
     width: 39.87%;
     padding: 0 5px;
 }
+
 
 .md-3 {
     width: 29.87%;
@@ -390,4 +403,14 @@ thead>tr>th, tbody >tr>td {
 
 .margin-left-200{
   margin-left: 200px!important;
+}
+
+.primary-button{
+    background-color: #1E9D55;
+    color: #ffffff;
+    width: 100%;
+    font-weight: bold;
+    height: 50px;
+    border-radius: 8px;
+    text-align: center;
 }

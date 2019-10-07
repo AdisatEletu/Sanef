@@ -13,6 +13,7 @@ const Dashboard = lazy(() => import("../pages/Dashboard"));
 const Customer = lazy(() => import("../pages/Customer"));
 const Wallet = lazy(() => import("../pages/wallet/Wallet"));
 const Partners = lazy(() => import("../pages/partners/Partners"));
+const Agents = lazy(() => import("../pages/Agents"));
 
 const Routes = () => (
     <Router>
@@ -31,6 +32,7 @@ const Routes = () => (
                     <PublicRoute exact path="/wallet" component={Wallet}/>
                     <PublicRoute exact path="/customers" component={Customer}/>
                     <PublicRoute exact path="/partners" component={Partners}/>
+                    <PublicRoute exact path="/agents" component={Agents}/>
                 </DashboardLayout>
             </Switch>
         </Suspense>

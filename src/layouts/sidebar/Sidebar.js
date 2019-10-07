@@ -9,7 +9,7 @@ export const Sidebar = props => {
             <div className="d-flex flex-column p-sidebar">
                 <NavLink to={"/home"}>
                     <div className={"p-links d-flex align-items-center justify-content-center"}>
-                        <img src={require("../../assets/PassID.png")} alt={"logo"} width={70}/>
+                        <img src={require("../../assets/SANEF.png")} alt={"logo"} width={70}/>
                     </div>
                 </NavLink>
 

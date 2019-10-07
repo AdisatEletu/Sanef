@@ -10,19 +10,18 @@ export default class Select extends React.Component{
         name: PropTypes.string.isRequired
     }
     render() {
-        const {value, type, style, id,onChange, name, placeholder} = this.props;
+        const {value, style, id,onChange, name, placeholder} = this.props;
         return (
             <>
                 <div className={"md-10"}>
                     <select id={id} value={value} name={name} placeholder={placeholder} className={"basic-input"} style={style} onChange={()=>{onChange()}}>
                         {React.Children.map(this.props.children, (option)=>{
-                            console.log("options", option);
-
                             return <option value={option.props.value} disabled={option.props.disabled} >
                                 {option.props.data}
                             </option>
                         })}
                     </select>
+
                 </div>
             </>
         );
